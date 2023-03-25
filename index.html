@@ -44,6 +44,7 @@ img {vertical-align: middle;}
   max-width: 1000px;
   position: relative;
   margin: auto;
+  align-text:center;
 }
 
 /* Caption text */
@@ -119,7 +120,7 @@ img {vertical-align: middle;}
     <h2>Sothis Acupuncture and Massage</h2>
     <h3>Ancient wisdom creating harmony</h3>
     <h4>Where physical and emotional healing begins</h4>
-    <button type="submit" style="background-color:red;color:white">Book a Consultation</button>
+    <a class="nav-link" href="form" style="background-color:red;color:white">Book a Consultation</a>
   </div>
 
   <div class="slideshow-container">
@@ -163,6 +164,27 @@ img {vertical-align: middle;}
   <span class="dot"></span>
 </div>
 </div>
+  <br>
+  <div style="padding:30px" id="form">
+    <form action="/#">
+      <div class="container">
+        <h2>Book a Consultation</h2>
+        <p></p>
+      </div>
+
+    <div class="container" style="background-color:white">
+      <input type="text" placeholder="Name" name="name" required>
+      <input type="text" placeholder="Email address" name="mail" required>
+    </div>
+
+    <div class="container">
+      <input type="submit" value="Contact">
+  </div>
+</form>
+  </div>
+  <div class="footer">
+        <p>&copy; Nancy Raza - 2023</p>
+      </div>
   <script>
 let slideIndex = 0;
 showSlides();
