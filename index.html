@@ -194,19 +194,19 @@ input[type=submit]:hover {
 </div>
   <br>
   <div style="padding:30px" id="form">
-    <form action="/#">
+    <form>
       <div class="container">
         <h2>Book a Consultation</h2>
         <p></p>
       </div>
 
     <div class="container" style="background-color:white">
-      <input type="text" placeholder="Name" name="name" required>
+      <input type="text" placeholder="Name" name="name" id="name" required>
       <input type="text" placeholder="Email address" name="mail" required>
     </div>
 
     <div class="container">
-      <input type="submit" value="Contact">
+      <input type="submit" value="Contact" onclick="sendcontact()">
   </div>
 </form>
   </div>
@@ -217,6 +217,11 @@ input[type=submit]:hover {
 let slideIndex = 0;
 showSlides();
 
+    function sendcontact(){
+      var name = document.getElementById("name");
+      alert("Thanks " + name.Value + "we will be in touch shortly");
+    }
+    
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
