@@ -1,229 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>SOTHIS</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #006699;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #0099cc;
-  color: white;
-}
-  
-  * {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  align-text:center;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-  
-.captiontext{
-  color: #f2f2f2;
-  font-size: 14px;
-  padding: 8px 12px;
-  position: absolute;
-  text-align:center;
-  top : 0;
-  width: 100%;
-  text-align: center;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-form {
-  border: 3px solid #f1f1f1;
-  font-family: Arial;
-}
-
-.container {
-  padding: 20px;
-  background-color: #f1f1f1;
-}
-
-input[type=text], input[type=submit] {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  border: none;
-}
-
-input[type=submit]:hover {
-  opacity: 0.8;
-}
-</style>
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SOTHIS</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+
 <body>
-  <div class="topnav">
-    <a href="#"><img src="images/sothislogo.jpg" style="width:10%;height:20%"></a>
-    <a class="active" href="#home">Sothis</a>
-  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="#">Soothes Acupuncture</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#about-me">About Me</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#contact">Contact</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#testimonials">Testimonials</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
 
-<div>
-  <div style="text-align:center;padding-bottom:20px">
-    <h2>Sothis Acupuncture<br>Ancient wisdom creating harmony</h2>
-    <h4>Where physical and emotional healing begins</h4>
-    <a class="nav-link" href="#form" style="background-color:red;color:white">Book a Consultation</a>
-  </div>
-  <div style="text-align:center;padding-bottom:20px">
-    <p>With over 3000 years of development and wisdom of experience accumulated, acupuncture has proven the efficacy in the treatment of a wide range of conditions.</p>
-    <p>The human body is a microcosm of the earth, just like the earth we are 70% water, we have paths where vital energy flows.  On earth the roads are rivers that carry water to ourish the earth, in the body are meridians where vital energy ir Qi flows.</p>
-    <p>When the pathways are blocked by physical or emotional trauma, the flow of Qi is blocked leading to disharmomy or dysfunction in the body.</p>
-    <p>Acupuncture restores flow in the blockages by stimulating body walls such as skin, muscles, and the web of connective tissue that wraps around all internal parts of the body from head to toe to produce a therapeutic effect</p>
-  </div>
-
-  <div class="slideshow-container">
-    <div class="mySlides fade">
-      <img src="images/yoann-boyer-i14h2xyPr18-unsplash.jpg" style="width:100%;height:90%">
-      <div class="text">Healing</div>
-    </div>
-    <div class="mySlides fade">
-      <img src="images/william-farlow-IevaZPwq0mw-unsplash.jpg" style="width:100%;height:90%">
-      <div class="text">Wisdom</div>
-    </div>
-    <div class="mySlides fade">
-      <img src="images/christin-hume-0MoF-Fe0w0A-unsplash.jpg" style="width:100%;height:90%">
-      <div class="text">Earth</div>
-    </div>
-    <div class="mySlides fade">
-      <img src="images/brett-jordan-MwkDKpOQmGc-unsplash.jpg" style="width:100%;height:90%">
-      <div class="text">Mental Health</div>
-    </div>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span>
-  <span class="dot"></span>
-</div>
-</div>
-  <br>
-  <div style="text-align:center" id="form">
-    <form style="width:400px;text-align:center" action="javascript: alert('Thanks for reaching out, we will be in touch shortly')">
-      <div class="container">
-        <h2>Book a Consultation</h2>
-        <p></p>
-      </div>
-      <div class="container" style="background-color:white">
-        <input type="text" placeholder="Name" name="name" id="name" required>
-        <input type="text" placeholder="Email address" name="mail" required>
-      </div>
-      <div class="container">
-        <input type="submit" value="Subscribe">
-    </div>
-  </form>
- </div>
+  <section id="about-me" class="py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 mx-auto">
+					<h2>About Me</h2>
+					<p>Insert your about me content here.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+  
+  <section id="contact" class="py-5 bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 mx-auto">
+					<h2>Contact</h2>
+					<form>
+					  <div class="form-group">
+					    <label for="name">Name</label>
+					    <input type="text" class="form-control" id="name">
+					  </div>
+					  <div class="form-group">
+					    <label for="email">Email address</label>
+					    <input type="email" class="form-control" id="email">
+					  </div>
+					  <div class="form-group">
+					    <label for="message">Message</label>
+					    <textarea class="form-control" id="message" rows="3"></textarea>
+					  </div>
+					  <button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+  
+  opy code
+<section id="testimonials" class="py-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 mx-auto">
+				<h2>Testimonials</h2>
+				<div class="card-deck">
+					<div class="card">
+						<div class="card-body">
+							<p class="card-text">"I've been going to Soothes Acupuncture for a few months now and I've seen a significant improvement in my chronic pain. Susan is very knowledgeable and caring, and she takes the time to understand your individual needs. Highly recommended!"</p>
+							<p class="card-text"><small class="text-muted">- Jane D.</small></p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<p class="card-text">"I was skeptical about acupuncture at first, but Susan made me feel at ease and explained the process thoroughly. After just a few sessions, I noticed a significant improvement in my sleep and stress levels. Soothes Acupuncture is definitely worth trying!"</p>
+							<p class="card-text"><small class="text-muted">- John M.</small></p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<p class="card-text">"Susan is a fantastic acupuncturist. She has helped me with a range of issues including anxiety, digestion, and allergies. I always leave feeling relaxed and rejuvenated. I highly recommend Soothes Acupuncture to anyone looking for natural healing and wellness."</p>
+							<p class="card-text"><small class="text-muted">- Sarah K.</small></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
   <div class="footer" style="text-align:center">
     <p>&copy; Nancy Raza - 2023</p>
-  </div>
-  <script>
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}    
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 5000); // Change image every 2 seconds
-    }
-</script>
+  </div>  
 </body>
 </html>
