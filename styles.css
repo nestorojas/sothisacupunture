@@ -1,68 +1,61 @@
-/* General Styles */
-body {
-    font-family: 'Lora', serif;
-    color: #333333;
-    background-color: #F5F0E1;
-}
-
-/* Navbar */
-.navbar {
-    background-color: #2F6356; /* Darker teal for better contrast */
-    padding: 1rem;
-}
-
-.navbar .navbar-brand {
-    color: #FFFFFF;
-    font-weight: bold;
-}
-
-.navbar .nav-link {
-    color: #FFFFFF;
-    margin-right: 1rem;
-    transition: color 0.3s ease;
-}
-
-.navbar .nav-link:hover {
-    color: #D4A373; /* Muted gold hover effect */
-}
-
-.navbar .nav-link.active {
-    color: #4C8A7A; /* Lighter teal for active link */
-}
-
-/* Buttons */
-.btn-primary {
-    background-color: #A8D5BA;
-    border-color: #A8D5BA;
-    color: #FFFFFF;
-}
-.btn-primary:hover {
-    background-color: #387C6D;
-    border-color: #387C6D;
-}
-
-/* Section Backgrounds */
-#about-me {
-    background-color: #F5F0E1;
-}
-#testimonials {
-    background-color: #A8D5BA;
-    color: #FFFFFF;
-}
-
-/* Footer */
-footer {
-    background-color: #387C6D;
-    color: #FFFFFF;
-}
-footer a {
-    color: #D4A373;
-}
-footer a:hover {
-    color: #A8D5BA;
-}
-
-/* Carousel */
-.carousel-item img {
-    border-radius: 10px;
-}
+        /* General Styles */
+        body {
+            font-family: 'Lora', serif;
+            color: #333333;
+            background-color: #F5F0E1;
+        }
+        /* Navbar */
+        .navbar {
+            background-color: #2F6356; /* Darker teal for better contrast */
+            padding: 1rem;
+        }
+        .navbar .navbar-brand {
+            color: #FFFFFF;
+            font-weight: bold;
+        }
+        .navbar .nav-link {
+            color: #FFFFFF;
+            margin-right: 1rem;
+            transition: color 0.3s ease;
+        }
+        .navbar .nav-link:hover {
+            color: #D4A373; /* Muted gold hover effect */
+        }
+        .navbar .nav-link.active {
+            color: #4C8A7A; /* Lighter teal for active link */
+        }
+        /* Buttons */
+        .btn-primary {
+            background-color: #A8D5BA;
+            border-color: #A8D5BA;
+            color: #FFFFFF;
+        }
+        .btn-primary:hover {
+            background-color: #387C6D;
+            border-color: #387C6D;
+        }
+        /* Section Backgrounds */
+        #about-me {
+            background-color: #F5F0E1;
+        }
+        #testimonials {
+            background-color: #A8D5BA;
+            color: #FFFFFF;
+        }
+        /* Footer */
+        footer {
+            background-color: #387C6D;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        footer a {
+            color: #D4A373;
+        }
+        footer a:hover {
+            color: #A8D5BA;
+        }
+        /* Carousel */
+        .carousel-item img {
+            border-radius: 10px;
+        }
