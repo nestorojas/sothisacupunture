@@ -7,13 +7,27 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: #387C6D;
+    background-color: #2F6356; /* Darker teal for better contrast */
+    padding: 1rem;
 }
-.navbar .navbar-brand, .navbar .nav-link {
-    color: #FFFFFF !important;
+
+.navbar .navbar-brand {
+    color: #FFFFFF;
+    font-weight: bold;
 }
+
+.navbar .nav-link {
+    color: #FFFFFF;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
 .navbar .nav-link:hover {
-    color: #D4A373 !important;
+    color: #D4A373; /* Muted gold hover effect */
+}
+
+.navbar .nav-link.active {
+    color: #4C8A7A; /* Lighter teal for active link */
 }
 
 /* Buttons */
