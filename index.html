@@ -79,17 +79,20 @@
         <div class="container">
             <h2 class="text-center section-title">Contact Us</h2>
             <p class="text-center">We’d love to hear from you! Get in touch to discuss your wellness journey.</p>
-            <form>
-                <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Your Name">
+            <form action="https://formspree.io/f/xbllqpyw" method="POST">
+                <div class="form-group mb-3">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
                 </div>
-                <div class="mb-3">
-                    <input type="email" class="form-control" placeholder="Your Email">
+                <div class="form-group mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
                 </div>
-                <div class="mb-3">
-                    <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+                <div class="form-group mb-3">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary w-100">Submit</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
     </section>
