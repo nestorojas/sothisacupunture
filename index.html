@@ -11,9 +11,9 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="images/nouriva-logo.jpg" alt="Nouriva Logo" width="50" height="50">
-                Nouriva
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/nouriva-logo.jpg" alt="Nouriva Logo" class="logo">
+                <span class="ms-2">Nouriva</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -21,8 +21,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about-me">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#carousel-section">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-me">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -31,29 +31,31 @@
 
     <!-- Hero Section -->
     <section id="hero">
-        <div class="container text-center">
-            <h1 class="fade-in">Welcome to Nouriva</h1>
-            <p class="lead fade-in">Discover ancient wisdom for modern healing.</p>
-            <a href="#about-me" class="btn btn-primary fade-in">Learn More</a>
+        <div class="container text-center text-white">
+            <h1 class="display-4">Welcome to Nouriva</h1>
+            <p class="lead">Ancient Wisdom for Modern Wellness</p>
+            <a href="#about-me" class="btn btn-primary mt-4">Explore More</a>
         </div>
     </section>
 
-    <!-- About Us Section -->
-    <section id="about-me">
+    <!-- About Section -->
+    <section id="about-me" class="py-5">
         <div class="container text-center">
-            <h2>Ancient Wisdom for Modern Wellness</h2>
-            <p>At Nouriva, we embrace over 3,000 years of holistic practices to restore balance and promote healing.</p>
+            <h2 class="section-title">About Us</h2>
+            <p class="section-text">
+                With over 3,000 years of wisdom, acupuncture has proven its efficacy in treating a wide range of conditions. At Nouriva, we restore balance by stimulating the body’s natural pathways, promoting physical and emotional healing.
+            </p>
         </div>
     </section>
 
     <!-- Gallery Section -->
-    <section id="carousel-section">
+    <section id="gallery" class="py-5 bg-light">
         <div class="container text-center">
-            <h2>Our Healing Philosophy</h2>
-            <div id="nourivaCarousel" class="carousel slide" data-bs-ride="carousel">
+            <h2 class="section-title">Our Healing Philosophy</h2>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images/brett-jordan-MwkDKpOQmGc-unsplash.jpg" class="d-block w-100" alt="Healing Process">
+                        <img src="images/brett-jordan-MwkDKpOQmGc-unsplash.jpg" class="d-block w-100" alt="Holistic Healing">
                     </div>
                     <div class="carousel-item">
                         <img src="images/christin-hume-0MoF-Fe0w0A-unsplash.jpg" class="d-block w-100" alt="Acupuncture Wisdom">
@@ -62,21 +64,21 @@
                         <img src="images/william-farlow-levaZPwq0mw-unsplash.jpg" class="d-block w-100" alt="Natural Wellness">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#nourivaCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#nourivaCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 </button>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <div class="container text-center">
-            <h2>Contact Us</h2>
-            <p>Get in touch to start your journey to wellness.</p>
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">Contact Us</h2>
+            <p class="text-center">We’d love to hear from you! Get in touch to discuss your wellness journey.</p>
             <form>
                 <div class="mb-3">
                     <input type="text" class="form-control" placeholder="Your Name">
@@ -87,13 +89,13 @@
                 <div class="mb-3">
                     <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
             </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="text-center py-3">
         <p>&copy; 2025 Nouriva. All rights reserved.</p>
     </footer>
 
