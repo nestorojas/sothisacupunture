@@ -52,6 +52,7 @@ body {
     justify-content: center;
     flex-direction: column;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    color: #2F6356;
 }
 
 /* Gallery */
