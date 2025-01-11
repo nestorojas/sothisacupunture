@@ -1,74 +1,175 @@
-     /* General Styles */
+/* General Styles */
 body {
     font-family: 'Lora', serif;
     color: #333333;
     background-color: #F5F0E1;
     margin: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('images/hero-background.jpg'); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+#hero .btn {
+    background-color: #A8D5BA;
+    border-color: #A8D5BA;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+#hero .btn:hover {
+    background-color: #387C6D;
+    border-color: #387C6D;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #2F6356; /* Dark teal */
+    background-color: #2F6356;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .navbar .navbar-brand {
     color: #FFFFFF;
     font-weight: bold;
     display: flex;
     align-items: center;
 }
+
 .navbar .navbar-brand img {
     margin-right: 10px;
     width: 50px;
     height: 50px;
 }
+
 .navbar .nav-link {
     color: #FFFFFF;
     margin-right: 15px;
 }
+
 .navbar .nav-link:hover {
-    color: #D4A373; /* Muted gold */
-}
-.navbar .nav-link.active {
-    color: #4C8A7A; /* Lighter teal */
+    color: #D4A373;
 }
 
-/* Sections */
+.navbar .nav-link.active {
+    color: #4C8A7A;
+}
+
+/* Section Styles */
 section {
     padding: 60px 0;
 }
-section#about-me {
+
+section#about-us {
+    background-color: #F5F0E1;
+    text-align: center;
+}
+
+section#about-us h2 {
+    margin-bottom: 20px;
+    color: #2F6356;
+}
+
+section#carousel {
     background-color: #F5F0E1;
 }
+
 section#testimonials {
-    background-color: #A8D5BA; /* Light teal */
+    background-color: #A8D5BA;
     color: #FFFFFF;
 }
+
 section#contact {
     background-color: #F5F0E1;
+}
+
+section#contact h2 {
+    margin-bottom: 20px;
+    color: #2F6356;
+}
+
+/* Carousel */
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #387C6D;
+}
+
+.carousel-caption p {
+    color: #555555;
+}
+
+/* Testimonials */
+#testimonials blockquote {
+    background: rgba(255, 255, 255, 0.9);
+    border-left: 5px solid #387C6D;
+    padding: 20px;
+    font-style: italic;
+    margin: 10px;
+}
+
+#testimonials footer {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+/* Footer */
+footer {
+    background-color: #387C6D;
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #D4A373;
+}
+
+footer a:hover {
+    color: #A8D5BA;
 }
 
 /* Buttons */
 .btn-primary {
     background-color: #A8D5BA;
     border-color: #A8D5BA;
+    color: #ffffff;
 }
+
 .btn-primary:hover {
     background-color: #387C6D;
     border-color: #387C6D;
-}
-
-/* Footer */
-footer {
-    background-color: #387C6D; /* Darker teal */
-    color: #FFFFFF;
-    text-align: center;
-    padding: 20px 0;
-}
-footer a {
-    color: #D4A373;
-}
-footer a:hover {
-    color: #A8D5BA;
 }
 
 /* Cards */
@@ -77,21 +178,35 @@ footer a:hover {
     border-radius: 8px;
     background-color: #FFFFFF;
 }
+
 .card p {
     font-style: italic;
 }
+
 .card small {
     color: #555555;
 }
-        /* Carousel */
-        #carousel-section {
-            padding: 60px 0;
-            background-color: #F5F0E1;
-        }
-        .carousel-caption h5 {
-            color: #387C6D; /* Dark teal */
-            font-weight: bold;
-        }
-        .carousel-caption p {
-            color: #555555; /* Subtle gray */
-        }
+
+/* Lightbox Thumbnails */
+.lightbox-gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.lightbox-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+}
